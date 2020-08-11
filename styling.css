@@ -1,81 +1,104 @@
+/*body element*/
 body{
-    font-family: 'Quattrocento Sans', sans-serif;
-    color: white;
-   
-    background: linear-gradient(rgba(55, 58, 140,.5),rgba(55, 58, 140,.5)), url("images/bg.jpg") no-repeat center center;
+/*    font-family: 'Quattrocento Sans', sans-serif;*/
+    background-image: linear-gradient( rgba(72, 100, 161, .7), rgba(72, 100, 161, .5)), url("images/bg.jpg"); 
+    background-position: no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-   
+    color: white;
+    
 }
 
 .meas_container{
-    background-color: rgba(8, 11, 97, .5);
+    background-color: rgba(32, 76, 171, 0.5);
 }
+
 .row{
     font-size: 30px;
-
 }
 
 .title{
     font-size: 14px;
 }
+
 .typingIcon{
     height: 50px;
 }
+
 #content{
     height: 120px;
-    background-color: rgba(113, 147, 209, .3);
+    background-color: rgba(32, 76, 171, 0.5);
     margin: 10px auto;
-    font-size: 25px;
+    font-size: 30px;
     overflow: hidden;
     padding: 0 5px;
     line-height: 40px;
+    margin: 50px 0;
 }
 
 .change{
-    height: 30px;
+    height: 25px;
     font-size: 16px;
+    margin-top: 10px;
 }
-#input {
-    background-color: rgba(17, 66, 156, .3);
-    color: rgb(95, 148, 245);
+
+#input{
+    background-color: rgba(32, 76, 171, 0.5);
     width: 100%;
     font-size: 30px;
     padding: 10px;
-    outline-color: blue;
+    color: rgb(1, 226, 182)
 }
+
 .keyboard{
-    background: url("images/keyboard.jpg") no-repeat center center;
-    background-size: contain;
     min-height: 200px;
     max-height: 300px;
-    margin: 10px;
+    background: url("images/keyboard.jpg") no-repeat center center;
+    background-size: contain;
+    margin-top: 10px;
 }
 
 .restart{
     margin-top: 20px;
-    opacity: 0.5;
+    opacity: 0.5
 }
+
 .btn-primary{
-    background: rgba(8, 11, 97, .5);
+    background: rgba(32, 76, 171, 0.5);
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
-    background: rgba(8, 11, 97, .8);
+
+.btn-primary:focus,.btn-primary:active,.btn-primary:hover{
+    background: rgba(32, 76, 171, 0.9);
 }
+
 .scoreDown, .scoreUp{
     border-radius: 5px;
     padding: 5px;
     font-size: 12px;
 }
+
 .scoreDown{
-    background: red;
+    background: mediumvioletred
 }
 
 .scoreUp{
-    background: green;
-    color: black;
+    background: greenyellow;
+    color: black
 }
 
 .modal{
     color: black;
+}
+
+.activeWord{
+    background-color: green;
+    border-radius: 5px;
+}
+
+.correctCharacter{
+    color: mediumblue;
+}
+
+.wrongCharacter{
+    color: mediumvioletred;
 }
